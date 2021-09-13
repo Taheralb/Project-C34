@@ -5,10 +5,11 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var box1, box2, box3,box4,box5,box6,box7,box8,box9,box10,box11,box12,box13,box14,box15,box16,box17,box18,box19,box20,box21,box22,box23,box24,box25,box26;
-var hero,monster,rope,ground;
+var hero,monster,rope,ground ;
 
 function preload() {
   bg = loadImage("background.png");
+  
 }
 
 function setup() {
@@ -16,38 +17,40 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-  ground = new Ground(600, 600, 1200, 20);
+  ground = new Ground(600, 400, 1200, 20);
+  ground = 
 
-  hero = new Hero(400,800,250);
+
+  hero = new Hero(200,800,250);
   rope = new Rope(hero.body, { x: 500, y: 50 });
-  monster = new Monster(1100,550,300);
+  monster = new Monster(1260,280,300);
 
-  box1 = new Box(600, 200, 70, 70);
-  box2 = new Box(900, 200, 70, 70);
-  box3 = new Box(900, 200, 70, 70);
-  box4 = new Box(900, 200, 70, 70);
-  box5 = new Box(900, 200, 70, 70);
-  box6 = new Box(900, 200, 70, 70);
-  box7 = new Box(800, 200, 70, 70);
-  box8 = new Box(800, 200, 70, 70);
-  box9 = new Box(800, 100, 70, 70);
-  box10 = new Box(800, 200, 70, 70);
-  box11 = new Box(800, 200, 70, 70);
-  box12 = new Box(800, 200, 70, 70);
-  box13 = new Box(800, 100, 70, 70);
-  box14 = new Box(800, 200, 70, 70);
-  box15 = new Box(700, 200, 70, 70);
-  box16 = new Box(700, 200, 70, 70);
-  box17 = new Box(700, 100, 70, 70);
-  box18 = new Box(700, 100, 70, 70);
-  box19 = new Box(700, 100, 70, 70);
-  box20 = new Box(700, 100, 70, 70);
-  box21 = new Box(600, 100, 70, 70);
-  box22 = new Box(600, 100, 70, 70);
-  box23 = new Box(600, 100, 70, 70);
-  box24 = new Box(600, 100, 70, 70);
-  box25 = new Box(600, 100, 70, 70);
-  box26 = new Box(600, 100, 70, 70);
+  box1 = new Box(600, 200, 50, 50);
+  box2 = new Box(900, 200, 50, 50);
+  box3 = new Box(900, 200, 50, 50);
+  box4 = new Box(900, 200, 50, 50);
+  box5 = new Box(900, 200, 50, 50);
+  box6 = new Box(900, 200, 50, 50);
+  box7 = new Box(800, 200, 50, 50);
+  box8 = new Box(800, 200, 50, 50);
+  box9 = new Box(800, 100, 50, 50);
+  box10 = new Box(800, 200, 50, 50);
+  box11 = new Box(800, 200, 50, 50);
+  box12 = new Box(800, 200, 50, 50);
+  box13 = new Box(800, 100, 50, 50);
+  box14 = new Box(800, 200, 50, 50);
+  box15 = new Box(700, 200, 50, 50);
+  box16 = new Box(700, 200, 50, 50);
+  box17 = new Box(700, 100, 50, 50);
+  box18 = new Box(700, 100, 50, 50);
+  box19 = new Box(700, 100, 50, 50);
+  box20 = new Box(700, 100, 50, 50);
+  box21 = new Box(600, 100, 50, 50);
+  box22 = new Box(600, 100, 50, 50);
+  box23 = new Box(600, 100, 50, 50);
+  box24 = new Box(600, 100, 50, 50);
+  box25 = new Box(600, 100, 50, 50);
+  box26 = new Box(600, 100, 50, 50);
 
 }
 
